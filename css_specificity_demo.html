@@ -1,0 +1,33 @@
+<div class="container">
+  <div id="foo" class="bar">Hello Green</div>
+  <div class="bar">Hello Blue</div>
+  <div value="red">Hello Red</div>
+</div>
+
+<style>
+  .bar {
+    color: #3969a6;
+    background-color: #cdcdcd;
+  }
+  div:not(.container) {
+    font-family: Arial;
+    padding: 8px;
+    border-radius: 4px;
+    margin: 4px;
+    background-color: #bce0ff;
+    font-weight: bold;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+  .container div {
+    width: 16.5%;
+  }
+  #foo {
+    color: #286428;
+  }
+  div[value=red] {
+    color: #9d0d0d;
+  }
+</style>
